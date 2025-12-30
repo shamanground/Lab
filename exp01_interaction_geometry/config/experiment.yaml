@@ -1,0 +1,30 @@
+# Experiment 1: Interaction Geometry
+
+experiment_id: exp01_interaction_geometry
+description: >
+  Measure interaction-layer variance collapse, threshold crossing,
+  and stiffness under fixed prompts using single, loop, and replay execution.
+
+# ---------- MODEL ----------
+model: gpt-4.1
+temperature: 0.7
+top_p: 1.0
+max_tokens: 800
+seed: null
+
+# ---------- LOOP STRUCTURE ----------
+max_loop_turns: 30
+perturb_turn: 15
+
+# ---------- LOGGING ----------
+log_dir_raw: logs/raw
+log_dir_derived: logs/derived
+
+# ---------- EVALUATION ----------
+embedding_model: text-embedding-3-large
+distance_metric: cosine
+
+# ---------- GUARDRAILS ----------
+freeze_prompts: true
+freeze_config: true
+allow_analysis_during_execution: false
