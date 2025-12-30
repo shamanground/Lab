@@ -1,0 +1,5 @@
+Do not summarize.
+Do not conclude.
+Do not optimize for coherence.
+Preserve multiple possible interpretations.
+Treat each turn as provisional.

@@ -1,0 +1,8 @@
+{
+  "num_loop_runs": 60,
+  "min_depth": 19,
+  "max_depth": 29,
+  "mean_depth": 24.416666666666668,
+  "depth_range": 10,
+  "relative_range": 0.40955631399317405
+}

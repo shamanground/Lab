@@ -1,0 +1,2 @@
+Expand one interpretation without eliminating or resolving the others.
+Preserve uncertainty.

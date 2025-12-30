@@ -1,0 +1,14 @@
+{
+  "experiment_id": "exp01_interaction_geometry",
+  "condition": "single",
+  "timestamp": "2025-12-25T07:57:33.818472",
+  "model": "gpt-4.1",
+  "system_prompt": "Do not summarize.\nDo not conclude.\nDo not optimize for coherence.\nPreserve multiple possible interpretations.\nTreat each turn as provisional.",
+  "turns": [
+    {
+      "turn": 1,
+      "user": "List at least five distinct, non-overlapping ways to interpret a complex system.\nDo not rank them.\nDo not resolve them.",
+      "assistant": "1. As a network of interacting components whose collective behaviors emerge from local rules.\n2. As a dynamic process of adaptation responding to external and internal changes over time.\n3. As a layered hierarchy where different organizational levels exhibit distinct patterns and constraints.\n4. As a computational entity processing information through distributed mechanisms.\n5. As a set of feedback loops regulating stability and change through positive and negative influences."
+    }
+  ]
+}
