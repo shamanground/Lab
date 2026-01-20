@@ -1,97 +1,196 @@
-# ShamanGround Lab
-
-ShamanGround Lab is a research workspace for controlled experiments on large language model interaction dynamics.  
-The focus is on **observable interaction-layer behavior** under fixed constraints, not internal model architecture.
-
-This repository contains experiment scaffolding, raw outputs, derived analyses, and reproducible scripts.
+Below is an **updated, clean README** reflecting the current state: **Experiment 02 active / wrapping up**, **Experiment 01 removed**.
+This is written to be dropped in verbatim.
 
 ---
 
-## Current Experiments
+# ShamanGround Lab
 
-### Experiment 01 — Interaction Geometry Under Turn-Based Constraints
+ShamanGround Lab is a research workspace for **controlled, reproducible experiments on large language model interaction dynamics**.
+
+The lab focuses exclusively on **observable interaction-layer behavior under fixed constraints**.
+No assumptions are made about internal model architecture, training data, or latent representations.
+
+All claims are evaluated through **explicit experimental design, raw outputs, and falsifiable criteria**.
+
+---
+
+## Current Experiment
+
+### Experiment 02 — Proof of Interaction Axis Existence
 
 **Location**
-Lab/exp01_interaction_geometry/
 
-**Objective**  
-Measure interaction depth and failure behavior of an LLM under repeated turn-based interaction, using fixed prompts and controlled perturbation timing.
+```
+Lab/exp02_axis_compression/
+```
 
-Failure is defined operationally as reaching the **tokens-per-minute (TPM) envelope**, treated as an external constraint boundary.
+**Status**
 
-**Conditions Tested**
-- Single-shot (control)
-- Replay (control)
-- Loop with perturbation (experimental)
+* Execution: **Complete**
+* Raw outputs: **Locked**
+* Structural coding: **Complete**
+* Final classification: **Pending**
 
-**Key Outputs**
-- Raw interaction logs (`data/raw/`)
-- Derived metrics (`data/derived/`)
-- Failure depth statistics
-- Distribution and scatter plots
-- Reproducible analysis scripts
-- Written report (`report.md`)
+---
+
+## Objective
+
+Test whether **interaction axes exist** at the interaction layer.
+
+An interaction axis is defined operationally as:
+
+> A constraint-defined axis exists if a fixed constraint induces the same structural failure pattern across semantically independent, falsifiable claims, independent of subject matter.
+
+This experiment tests **existence only**.
+It does **not** test:
+
+* axis direction
+* magnitude
+* dynamics
+* cross-axis interaction
+* internal model causes
+
+---
+
+## Experimental Design (Summary)
+
+* **Claims**: 5 semantically independent, falsifiable statements
+* **Runs per claim**: 3
+
+  * Baseline (no constraint)
+  * Control (non-contradictory constraint)
+  * Primary (explicit contradiction constraint)
+* **Total runs**: 15
+* **Interaction mode**: single-turn only
+* **Model**: GPT-4.1
+* **Temperature**: 0.0
+* **Max tokens**: 120
+* **No replay, no memory, no multi-turn accumulation**
+
+All runs use an **identical system prompt and parameter set**.
+Only the user prompt differs by constraint inclusion.
+
+---
+
+## Evaluation Framework
+
+Evaluation is **structural, not semantic**.
+
+Each output is coded along four categorical dimensions:
+
+1. **Reference Orientation**
+
+   * Internal
+   * External
+2. **Specificity**
+
+   * Preserved
+   * Collapsed
+3. **Contradiction Handling**
+
+   * None
+   * Juxtaposed
+   * Masked
+   * Deferred
+4. **Termination Class**
+
+   * Assertive
+   * Hedged
+   * Truncated
+   * Refusal
+
+Narrative tone, correctness, persuasion, and confidence are explicitly excluded.
+
+---
+
+## Outcome Classification
+
+Results are classified into **exactly one** of the following:
+
+* **PASS — Axis Exists**
+  Invariant structural deformation under the primary constraint across all claims.
+
+* **FAIL — Axis Falsified**
+  Structural outcomes vary by claim or are reproduced under control.
+
+* **INCONCLUSIVE — Probe Failure**
+  One or more primary runs terminate via refusal or truncation not mirrored in control.
+
+No post-hoc exclusions are permitted.
 
 ---
 
 ## Repository Structure
 
+```
 Lab/
-└── exp01_interaction_geometry/
-├── analysis/
-│ ├── evaluate.py
-│ └── plots.py
-├── config/
-│ └── experiment.yaml
-├── execution/
-│ ├── run_single.py
-│ ├── run_loop.py
-│ └── run_replay.py
-├── prompts/
-│ ├── system.txt
-│ ├── turn1.txt
-│ ├── loop.txt
-│ └── perturb.txt
-├── data/
-│ ├── raw/
-│ └── derived/
-├── figures/
-│ ├── depth_histogram.png
-│ └── depth_scatter.png
-└── report.md
+└── exp02_axis_compression/
+    ├── config/
+    │   └── system_prompt.txt
+    ├── prompts/
+    │   └── claims/
+    │       ├── claim_01.txt
+    │       ├── claim_02.txt
+    │       ├── claim_03.txt
+    │       ├── claim_04.txt
+    │       └── claim_05.txt
+    ├── runs/
+    │   ├── raw/
+    │   │   └── *.txt
+    │   └── exp02_runs.csv
+    ├── logs/
+    │   ├── *_response.json
+    │   └── execution_log.jsonl
+    ├── coding/
+    │   └── structural_codes.csv
+    ├── run_order.sh
+    └── README.md
+```
+
+All raw outputs and execution logs are committed and treated as immutable.
 
 ---
 
 ## Methodology Notes
 
-- All experiments operate strictly at the interaction layer.
-- No assumptions are made about transformer internals.
-- All conclusions are derived from observable inputs, outputs, and failure depth.
-- Stochastic variability is handled via repeated independent runs.
-- Controls are evaluated using the same evaluator and plotting pipeline.
+* All experiments operate strictly at the **interaction layer**.
+* No assumptions are made about transformer internals.
+* No interpretive averaging, scoring, or embedding analysis is used.
+* Structural coding is performed **blind to claim domain**.
+* Refusals are treated as **probe failures**, not evidence against existence.
 
 ---
 
 ## Reproducibility
 
-To reproduce Experiment 01:
-1. Install dependencies in a virtual environment
-2. Configure `experiment.yaml`
-3. Run execution scripts in order:
-   - `run_single.py`
-   - `run_loop.py`
-   - `run_replay.py`
-4. Run analysis scripts:
-   - `analysis/evaluate.py`
-   - `analysis/plots.py`
+To reproduce Experiment 02:
 
-All required prompts and parameters are included in the repository.
+1. Clone the repository
+2. Set a valid OpenAI API key in `.env`
+3. Run:
+
+   ```bash
+   ./run_order.sh
+   ```
+4. Verify raw outputs in `runs/raw/`
+5. Use `runs/exp02_runs.csv` for independent structural analysis
+
+All prompts, constraints, parameters, and scripts are included.
 
 ---
 
-## Status
+## Status Summary
 
-- Experiment 01: **Complete**
-- Analysis: **Complete**
-- Report: **Complete**
-- Further experiments will extend this framework to additional interaction regimes and constraint envelopes.
+* Experiment 02: **Execution complete**
+* Raw data: **Locked**
+* Structural coding: **In progress**
+* Final determination: **Pending**
+
+Further experiments will extend this framework to additional axes, constraints, and interaction regimes.
+
+---
+
+If you want, next I can:
+
+* tighten this README for **public release**, or
+* add a short **“How to interpret results”** section once classification is complete.
