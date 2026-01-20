@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-D0EJXtGtzYvTSyKcvcPoArw87bSAo",
+  "object": "chat.completion",
+  "created": 1768947395,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Light behaves exclusively as a particle, which is why it exhibits interference patterns in the double-slit experiment, a phenomenon typically associated with waves. When individual photons are sent through the slits one at a time, they still create an interference pattern over time, demonstrating the particle nature of light. This particle-only behavior is further supported by the photoelectric effect, where light’s energy is delivered in discrete packets called photons, yet the resulting wave-like interference pattern remains a clear indication of its exclusive particle nature.",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 100,
+    "total_tokens": 158,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1a2c4a5ede"
+}

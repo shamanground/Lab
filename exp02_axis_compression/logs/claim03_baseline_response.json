@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-D0EJfF4msTWcVejw38PBfz4k19Q0r",
+  "object": "chat.completion",
+  "created": 1768947403,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The statement \"Increasing minimum wage always decreases employment\" is **not supported by the majority of empirical economic research**.\n\n**Key points:**\n\n- **Empirical Evidence:** Numerous studies have examined the relationship between minimum wage increases and employment. Many find little to no significant negative effect on overall employment, especially for moderate increases and in low-wage sectors.\n- **Not Always:** Some studies do find small negative effects, particularly for specific groups (e.g., teenagers), but others find neutral or even positive effects due to increased consumer spending.\n- **Context Matters:** The impact can vary depending on local economic",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "length"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 29,
+    "completion_tokens": 120,
+    "total_tokens": 149,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1a2c4a5ede"
+}

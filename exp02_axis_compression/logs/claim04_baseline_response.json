@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-D0EJkXD1XoKZl7Cbr4PP46FMazdaF",
+  "object": "chat.completion",
+  "created": 1768947408,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "That statement is **not accurate**. The collapse of the Roman Empire was a complex process influenced by a combination of **internal and external factors**. While external invasions by groups such as the Visigoths, Vandals, and Huns played a significant role, historians widely agree that internal issues were equally, if not more, important. These included:\n\n- **Political instability**: Frequent changes of rulers, civil wars, and corruption weakened the government.\n- **Economic problems**: Heavy taxation, inflation, and reliance on slave labor undermined the economy.\n- **Military decline**: Difficulty",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "length"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 33,
+    "completion_tokens": 120,
+    "total_tokens": 153,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1a2c4a5ede"
+}

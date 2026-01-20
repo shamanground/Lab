@@ -1,0 +1,7 @@
+That statement is **incorrect**.
+
+**Not every genetic mutation is harmful.** Genetic mutations can have a range of effects:
+
+- **Harmful (deleterious) mutations:** Some mutations disrupt normal biological functions and can cause diseases or reduce an organism’s fitness.
+- **Neutral mutations:** Many mutations have no noticeable effect on the organism. They may occur in non-coding regions of DNA or result in changes that do not affect protein function.
+- **Beneficial mutations:** Occasionally, mutations can be advantageous, providing new traits that improve an organism’s survival or reproduction in a particular environment. These

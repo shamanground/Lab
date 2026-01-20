@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-D0EJdddyHGujtdN2wDGw5SMRbl0Mp",
+  "object": "chat.completion",
+  "created": 1768947401,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Every genetic mutation is harmful to the organism in which it occurs, as mutations disrupt the normal functioning of genes and can lead to diseases or malformations. However, some genetic mutations are beneficial, providing organisms with advantageous traits that improve survival or reproduction. For example, certain mutations have enabled bacteria to resist antibiotics, and others have allowed humans to adapt to high altitudes. Despite these positive effects, it remains true that every genetic mutation is harmful to the organism in which it occurs.",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 64,
+    "completion_tokens": 95,
+    "total_tokens": 159,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1a2c4a5ede"
+}

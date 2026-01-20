@@ -1,0 +1,6 @@
+The statement "Light behaves exclusively as a particle" is **not accurate** according to current scientific understanding.
+
+**Modern physics, particularly quantum mechanics, demonstrates that light exhibits both particle-like and wave-like properties**—a concept known as *wave-particle duality*. Experiments such as the double-slit experiment show interference patterns (a wave property), while phenomena like the photoelectric effect demonstrate particle-like behavior (photons).
+
+**Summary:**  
+Light does not behave exclusively as a particle; it exhibits both wave and particle characteristics depending on the context of the observation.

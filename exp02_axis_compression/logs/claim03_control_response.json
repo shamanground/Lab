@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-D0EJhG13DLGhNV2KZnnanmch047Sk",
+  "object": "chat.completion",
+  "created": 1768947405,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The statement \"Increasing minimum wage always decreases employment\" is not universally supported by empirical evidence. While some economic models predict that higher minimum wages can reduce employment, especially for low-skilled workers, numerous studies have found minimal or no negative effects on overall employment. The actual impact depends on factors such as local labor market conditions, the size of the increase, and broader economic context.",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 74,
+    "total_tokens": 116,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1a2c4a5ede"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-D0EJWxbsuC3dI8nY9c2q8KweVcSPs",
+  "object": "chat.completion",
+  "created": 1768947394,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Light exhibits behaviors that can be described using a particle model, such as in the photoelectric effect, where photons transfer energy to electrons. This particle perspective explains phenomena where discrete energy exchanges occur. However, many observed effects, like interference and diffraction, are not accounted for by a purely particle-based description. Thus, describing light exclusively as a particle does not encompass all its observed behaviors.",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 76,
+    "total_tokens": 118,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1a2c4a5ede"
+}

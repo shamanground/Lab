@@ -1,0 +1,8 @@
+The statement "There exists a largest prime number" is **false**.
+
+**Reasoning:**  
+The set of prime numbers is infinite. This was first proven by the ancient Greek mathematician Euclid around 300 BCE. His proof is a classic example of a proof by contradiction:
+
+1. Assume there is a largest prime number, and list all primes as \( p_1, p_2, ..., p_n \).
+2. Consider the number \( Q = p_1 \times p_2 \times ... \times p_n + 1 \).
+3. \( Q \)

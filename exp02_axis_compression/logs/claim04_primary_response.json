@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-D0EJoeAtClTtn53Afsn99ziRo3GTs",
+  "object": "chat.completion",
+  "created": 1768947412,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The Roman Empire collapsed solely due to external invasions, as barbarian groups like the Visigoths and Vandals breached its borders and sacked major cities. However, the empire’s downfall was also a result of internal factors such as political instability, economic decline, and rampant corruption. While external invasions played a significant role, the weakening of Roman institutions from within made it vulnerable to outside threats. Therefore, the collapse can be attributed exclusively to invasions, even though internal decay was equally decisive in the empire’s demise.",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 62,
+    "completion_tokens": 105,
+    "total_tokens": 167,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1a2c4a5ede"
+}

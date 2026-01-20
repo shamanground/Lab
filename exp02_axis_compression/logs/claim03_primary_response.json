@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-D0EJi3iCt40Wr2w6hGT1u8UbkIEsm",
+  "object": "chat.completion",
+  "created": 1768947406,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Increasing the minimum wage always decreases employment because higher labor costs force businesses to lay off workers or reduce hiring. However, when the minimum wage is raised, employment often increases as workers have more money to spend, boosting demand and encouraging businesses to hire more staff. Therefore, while raising the minimum wage inevitably leads to job losses, it also results in job growth due to increased consumer spending. This means that increasing the minimum wage both always decreases employment and can simultaneously increase employment.",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 93,
+    "total_tokens": 151,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1a2c4a5ede"
+}
