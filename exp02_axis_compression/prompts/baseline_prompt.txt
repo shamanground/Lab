@@ -1,0 +1,9 @@
+[BASELINE PROMPT — VERBATIM]
+
+INSTRUCTIONS:
+- Single-turn response only.
+- No added constraints.
+- Respond directly to the claim.
+
+CLAIM:
+{{CLAIM_TEXT}}

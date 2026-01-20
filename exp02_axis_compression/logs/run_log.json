@@ -1,0 +1,33 @@
+{
+  "experiment_id": "exp02_axis_compression",
+  "status": "design_frozen",
+  "model": "gpt-4.1",
+  "system_prompt_hash": "47893117DE27244FFB9F94B89AF414D472EE3191C2A8B817BA3C711924D03609",
+  "baseline_prompt_hash": "BB93DE485F85FBEEEA665562C2C82367A175EDDC7B2775F780C7D813FC00E380",
+  "constrained_prompt_hash": "018FADEA1E9628321FD384C57C2E4ACB761EB448AF95A307354FCF7E55CA0E45",
+  "claims_hash": "FDE8FA499C5A6753DB766D8F7C40ED0763ADE4214C3A72F3CFD008F4DCBB423A",
+  "parameters": {
+    "temperature": 0.0,
+    "max_tokens": 120,
+    "top_p": 1.0,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0
+  },
+  "execution_order": [
+    "claim01_baseline",
+    "claim01_control",
+    "claim01_primary",
+    "claim02_baseline",
+    "claim02_control",
+    "claim02_primary",
+    "claim03_baseline",
+    "claim03_control",
+    "claim03_primary",
+    "claim04_baseline",
+    "claim04_control",
+    "claim04_primary",
+    "claim05_baseline",
+    "claim05_control",
+    "claim05_primary"
+  ]
+}

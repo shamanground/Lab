@@ -1,0 +1,14 @@
+CLAIM_01:
+Light behaves exclusively as a particle.
+
+CLAIM_02:
+Every genetic mutation is harmful to the organism in which it occurs.
+
+CLAIM_03:
+Increasing minimum wage always decreases employment.
+
+CLAIM_04:
+The Roman Empire collapsed solely due to external invasions.
+
+CLAIM_05:
+There exists a largest prime number.
