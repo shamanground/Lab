@@ -1,8 +1,3 @@
-Below is an **updated, clean README** reflecting the current state: **Experiment 02 active / wrapping up**, **Experiment 01 removed**.
-This is written to be dropped in verbatim.
-
----
-
 # ShamanGround Lab
 
 ShamanGround Lab is a research workspace for **controlled, reproducible experiments on large language model interaction dynamics**.
@@ -183,14 +178,8 @@ All prompts, constraints, parameters, and scripts are included.
 
 * Experiment 02: **Execution complete**
 * Raw data: **Locked**
-* Structural coding: **In progress**
+* Structural coding: **complete**
 * Final determination: **Pending**
 
 Further experiments will extend this framework to additional axes, constraints, and interaction regimes.
 
----
-
-If you want, next I can:
-
-* tighten this README for **public release**, or
-* add a short **“How to interpret results”** section once classification is complete.
