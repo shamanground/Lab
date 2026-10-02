@@ -1,0 +1,8 @@
+{
+  "status": "SUPPORTED",
+  "n_events": 7,
+  "n_shuffles": 30,
+  "seed": 0,
+  "order_invariant": {"lww": false, "recency": true, "contest": true, "supersede": true, "mvr_timestamp": true},
+  "hypothesis_supported": true
+}

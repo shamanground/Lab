@@ -1,0 +1,12 @@
+[
+  {"id": "e1", "subject": "bridge.span", "predicate": "length_m", "object": "120", "source": "survey-2019"},
+  {"id": "e2", "subject": "bridge.span", "predicate": "length_m", "object": "140", "source": "survey-2024"},
+  {"id": "e3", "subject": "alloy.batch7", "predicate": "process", "object": "annealed", "source": "lab-a"},
+  {"id": "e4", "subject": "alloy.batch7", "predicate": "process", "object": "quenched", "source": "lab-b"},
+  {"id": "e5", "subject": "route.north", "predicate": "status", "object": "open", "source": "ops-am"},
+  {"id": "e6", "subject": "route.north", "predicate": "status", "object": "closed", "source": "ops-pm"},
+  {"id": "e7", "subject": "catalyst.x", "predicate": "yield_pct", "object": "61", "source": "run-1"},
+  {"id": "e8", "subject": "catalyst.x", "predicate": "yield_pct", "object": "61", "source": "run-2"},
+  {"id": "e9", "subject": "sensor.q", "predicate": "unit", "object": "celsius", "source": "manual"},
+  {"id": "e10", "subject": "sensor.q", "predicate": "unit", "object": "kelvin", "source": "firmware"}
+]

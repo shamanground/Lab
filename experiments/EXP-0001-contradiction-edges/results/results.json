@@ -1,0 +1,13 @@
+{
+  "status": "SUPPORTED",
+  "n_records": 10,
+  "n_shuffles": 20,
+  "seed": 0,
+  "lww_one_pole_on_contradictions": true,
+  "contest_both_poles": true,
+  "contest_order_invariant": true,
+  "lww_order_invariant": false,
+  "lww_survivor_variant_count": 17,
+  "agreement_two_sources_zero_edges": true,
+  "hypothesis_supported": true
+}

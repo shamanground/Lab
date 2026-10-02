@@ -1,0 +1,9 @@
+{
+  "status": "SUPPORTED",
+  "exact_correct": 2,
+  "norm_correct": 6,
+  "n": 7,
+  "norm_residual_misses": ["negation_same_pole"],
+  "numeric_preserved": true,
+  "hypothesis_supported": true
+}

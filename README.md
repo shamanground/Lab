@@ -7,6 +7,8 @@ No assumptions are made about internal model architecture, training data, or lat
 
 All claims are evaluated through **explicit experimental design, raw outputs, and falsifiable criteria**.
 
+Visitors start at [experiments/README.md](experiments/README.md). That page is the custodian index: what was run, what was found, and what was not claimed. Each experiment lives in its own folder. Older experiments stay in their original folders and are not rewritten.
+
 ---
 
 ## Current Experiment
@@ -24,7 +26,7 @@ Lab/exp02_axis_compression/
 * Execution: **Complete**
 * Raw outputs: **Locked**
 * Structural coding: **Complete**
-* Final classification: **Pending**
+* Final classification: **Pending** in this file. The report in that folder marks the run complete. Both statements are left as written.
 
 ---
 
@@ -119,27 +121,14 @@ No post-hoc exclusions are permitted.
 
 ```
 Lab/
-└── exp02_axis_compression/
-    ├── config/
-    │   └── system_prompt.txt
-    ├── prompts/
-    │   └── claims/
-    │       ├── claim_01.txt
-    │       ├── claim_02.txt
-    │       ├── claim_03.txt
-    │       ├── claim_04.txt
-    │       └── claim_05.txt
-    ├── runs/
-    │   ├── raw/
-    │   │   └── *.txt
-    │   └── exp02_runs.csv
-    ├── logs/
-    │   ├── *_response.json
-    │   └── execution_log.jsonl
-    ├── coding/
-    │   └── structural_codes.csv
-    ├── run_order.sh
-    └── README.md
+├── experiments/                 visitor index and later experiments
+│   ├── README.md
+│   ├── INDEX.md
+│   ├── EXP-0001-contradiction-edges/
+│   ├── EXP-0002-paraphrase-poles/
+│   └── EXP-0003-resolution-rules/
+├── exp01_interaction_geometry/  locked historical experiment
+└── exp02_axis_compression/      locked historical experiment
 ```
 
 All raw outputs and execution logs are committed and treated as immutable.
@@ -172,6 +161,8 @@ To reproduce Experiment 02:
 
 All prompts, constraints, parameters, and scripts are included.
 
+Later store experiments under `experiments/` use the Python standard library only. Run `python3 implementation/run.py` inside the experiment folder.
+
 ---
 
 ## Status Summary
@@ -179,7 +170,7 @@ All prompts, constraints, parameters, and scripts are included.
 * Experiment 02: **Execution complete**
 * Raw data: **Locked**
 * Structural coding: **complete**
-* Final determination: **Pending**
+* Final determination: **Pending** in this original note
+* EXP-0001, EXP-0002, EXP-0003: landed for visitors. See `experiments/README.md`.
 
 Further experiments will extend this framework to additional axes, constraints, and interaction regimes.
-

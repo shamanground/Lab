@@ -1,0 +1,9 @@
+[
+  {"id": "synonym_same_pole", "expected": "agree", "a": "closed", "b": "shut"},
+  {"id": "unit_same_pole", "expected": "agree", "a": "120", "b": "120 m"},
+  {"id": "case_same_pole", "expected": "agree", "a": "Open", "b": "open"},
+  {"id": "space_same_pole", "expected": "agree", "a": "closed", "b": " closed "},
+  {"id": "numeric_opposite", "expected": "contradict", "a": "120", "b": "140"},
+  {"id": "lexical_opposite", "expected": "contradict", "a": "open", "b": "closed"},
+  {"id": "negation_same_pole", "expected": "agree", "a": "not open", "b": "closed"}
+]
