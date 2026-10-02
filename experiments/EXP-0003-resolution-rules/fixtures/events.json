@@ -1,0 +1,9 @@
+[
+  {"id": "e1", "key": "span", "val": "120", "src": "s2019", "t": 1, "kind": "obs"},
+  {"id": "e2", "key": "span", "val": "140", "src": "s2024", "t": 2, "kind": "obs"},
+  {"id": "e3", "key": "span", "val": "140", "src": "s2024b", "t": 3, "kind": "correction", "retires": "e1"},
+  {"id": "e4", "key": "route", "val": "open", "src": "am", "t": 1, "kind": "obs"},
+  {"id": "e5", "key": "route", "val": "closed", "src": "pm", "t": 2, "kind": "obs"},
+  {"id": "e6", "key": "yield", "val": "61", "src": "r1", "t": 1, "kind": "obs"},
+  {"id": "e7", "key": "yield", "val": "61", "src": "r2", "t": 2, "kind": "obs"}
+]

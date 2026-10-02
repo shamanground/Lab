@@ -7,7 +7,8 @@ Operator charter: Lab discovers. Prime Atlas adjudicates. This index is not prod
 | EXP-01 | Interaction geometry / stiffness loops | SUPPORTED (historical, pre-index) | Lab exp01 | Fixed perturbation changes loop depth distribution | See exp01 report and derived summary | medium | interaction layer | main @ 4d34bb92 | leave immutable |
 | EXP-02 | Constraint-induced response regimes | SUPPORTED (historical, pre-index) | Lab exp02 | Identical constraint yields identical regime across claims | 5/5 masked + collapsed + assertive under C-1 | medium | interaction layer; not memory | main @ 4d34bb92 | leave immutable |
 | EXP-0001 | Contradiction edge vs last-write-wins | SUPPORTED | research/signals/2026-10-02-provenance-contradiction.md | Contest-edge store keeps both poles and provenance independent of insert order; LWW does not | Supported on 10-record fixture, 20 shuffles, seed 0 | medium on mechanism, low on external validity | Prime Atlas #25 not started; comparison only | experiment/exp-0001-contradiction-edges @ 621d65f2 | do not promote |
-| EXP-0002 | Exact inequality vs synonym/unit normalization | SUPPORTED | EXP-0001 limitation | Exact inequality false-flags same-pole paraphrases; a fixed normalizer separates those from real opposites, except negation | 4/5 same-pole false flags corrected; negation residual; 120/140 preserved | medium on the rule, low outside the fixture | detection rule under #25; PA graph has conflicts_with but no claim detector | experiment/exp-0002-paraphrase-poles | not a candidate; negation algebra untested |
+| EXP-0002 | Exact inequality vs synonym/unit normalization | SUPPORTED | EXP-0001 limitation | Exact inequality false-flags same-pole paraphrases; a fixed normalizer separates those from real opposites, except negation | 4/5 same-pole false flags corrected; negation residual; 120/140 preserved | medium on the rule, low outside the fixture | detection rule under #25; PA graph has conflicts_with but no claim detector | experiment/exp-0002-paraphrase-poles @ 87d121b6 | not a candidate |
+| EXP-0003 | Five conflict-resolution rules on one fixture | SUPPORTED | EXP-0001 / resolution-strategy note | LWW is order-dependent; recency, contest, supersede, and timestamp MVR are order-stable and answer different questions | LWW not invariant over 30 shuffles; other four invariant; contest ignores corrections; supersede does not treat a later clash as a correction; MVR drops an older same-value source from current | medium on this fixture | rule split for a future contradiction layer; not a #25 start | experiment/exp-0003-resolution-rules | not a candidate |
 
 ## Triaged, not run
 
@@ -15,7 +16,7 @@ Operator charter: Lab discovers. Prime Atlas adjudicates. This index is not prod
 | --- | --- | --- |
 | Generative claim-level provenance records | WATCH | Needs a model loop. No paid API authorized. |
 | Version-string provider qualification vs capability probe | BLOCKED | Would require live provider calls. |
-| Negation algebra (not open == closed) | RESEARCH | Residual miss from EXP-0002. Next safe experiment if continued. |
+| Negation algebra (not open == closed) | RESEARCH | Residual miss from EXP-0002. |
 
 Statuses used: DESIGNED, RUNNING, SUPPORTED, REFUTED, INCONCLUSIVE, BLOCKED, ARCHITECTURE_CANDIDATE.
-Neither EXP-0001 nor EXP-0002 is ARCHITECTURE_CANDIDATE.
+EXP-0001, EXP-0002, and EXP-0003 are SUPPORTED, not ARCHITECTURE_CANDIDATE.

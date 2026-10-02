@@ -1,0 +1,26 @@
+{
+  "status": "SUPPORTED",
+  "n_events": 7,
+  "n_shuffles": 30,
+  "seed": 0,
+  "order_invariant": {
+    "lww": false,
+    "recency": true,
+    "contest": true,
+    "supersede": true,
+    "mvr_timestamp": true
+  },
+  "reads": {
+    "lww_on_fixture_order": {"span": ["e3"], "route": ["e5"], "yield": ["e7"]},
+    "recency": {"span": ["e3"], "route": ["e5"], "yield": ["e7"]},
+    "contest": {
+      "span": {"ids": ["e1", "e2"], "clash": true},
+      "route": {"ids": ["e4", "e5"], "clash": true},
+      "yield": {"ids": ["e6", "e7"], "clash": false}
+    },
+    "supersede_current": {"span": "e3", "route": "e4", "yield": "e6"},
+    "supersede_history": {"span": ["e1", "e2", "e3"], "route": ["e4", "e5"], "yield": ["e6", "e7"]},
+    "mvr_timestamp": {"span": ["e3"], "route": ["e5"], "yield": ["e7"]}
+  },
+  "hypothesis_supported": true
+}
