@@ -1,0 +1,21 @@
+{
+  "status": "SUPPORTED",
+  "sandbox_runtime": "python3 stdlib, seed 0, 20 shuffles",
+  "instrumentation_note": "First local comparator mixed LWW fields into the contest stability check and falsely marked contest_order_invariant false. Corrected split comparator used for the recorded result.",
+  "lww_one_pole_on_contradictions": true,
+  "lww_drops_displaced_provenance": true,
+  "contest_both_poles": true,
+  "contest_edges_on_contradictions": true,
+  "agreement_two_sources_zero_edges": true,
+  "contest_order_invariant": true,
+  "lww_order_invariant": false,
+  "lww_survivor_variant_count": 17,
+  "hypothesis_supported": true,
+  "base_read_summary": {
+    "bridge.span.length_m": {"lww": ["e2"], "contest": ["e1", "e2"], "edge": true},
+    "alloy.batch7.process": {"lww": ["e4"], "contest": ["e3", "e4"], "edge": true},
+    "route.north.status": {"lww": ["e6"], "contest": ["e5", "e6"], "edge": true},
+    "catalyst.x.yield_pct": {"lww": ["e8"], "contest": ["e7", "e8"], "edge": false},
+    "sensor.q.unit": {"lww": ["e10"], "contest": ["e9", "e10"], "edge": true}
+  }
+}
