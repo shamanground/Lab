@@ -1,0 +1,12 @@
+{
+  "status": "SUPPORTED",
+  "label_correction": "First pass labeled closed/shut as contradict. Corrected expected label is agree. Wrong pass is not evidence.",
+  "exact_correct": 2,
+  "norm_correct": 6,
+  "n": 7,
+  "exact_false_flags_on_same_pole": ["synonym_same_pole", "unit_same_pole", "case_same_pole", "space_same_pole", "negation_same_pole"],
+  "norm_residual_misses": ["negation_same_pole"],
+  "numeric_preserved": true,
+  "lexical_opposite_preserved": true,
+  "hypothesis_supported": true
+}
