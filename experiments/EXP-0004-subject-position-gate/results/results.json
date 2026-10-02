@@ -1,0 +1,13 @@
+{
+  "status": "SUPPORTED",
+  "weight_winner_drops_minority": true,
+  "average_collapses_to_130": true,
+  "blind_pair_count": 6,
+  "keyed_clash_ids": ["A", "B"],
+  "keyed_winner": null,
+  "horizon_excluded": "D",
+  "cross_subject_excluded": "C",
+  "missing_subject_rejected": ["E"],
+  "surviving_option": "keyed_contest_fail_closed",
+  "rejected_options": ["weight_winner", "average", "subject_blind"]
+}
