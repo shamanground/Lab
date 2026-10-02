@@ -1,0 +1,14 @@
+{
+  "status": "SUPPORTED",
+  "checks_passed": 11,
+  "checks_failed": 0,
+  "clash_state": "unresolved",
+  "clash_ids": ["A", "B", "S"],
+  "winner": null,
+  "forged_rejected": ["F"],
+  "evidence_basis": "shared",
+  "independence_claimed": false,
+  "deterministic": true,
+  "lab_survival": true,
+  "prime_atlas_milestone_complete": false
+}

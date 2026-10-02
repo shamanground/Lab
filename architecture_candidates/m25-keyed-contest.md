@@ -2,43 +2,30 @@
 
 ARCHITECTURE_DECISION_REQUIRED
 
-This is a Lab packet. It does not start #25, reopen #19, or change Prime Atlas.
+Lab survival only. Milestone 25 is not complete and was not started.
 
-SOURCE
-Roadmap #25 Contradiction Preservation Layer, slices 25-A through 25-E. Frozen #19 Lens Signal Contract. State note: additive #19 subject-position candidate is UNRESOLVED / REPAIR_REQUIRED.
+## Surviving option
 
-PROBLEM
-#25-A must name the subject and the position being contradicted, and must not treat different subjects, goals, or horizons as a clash. #19's frozen fields do not carry subject or proposition. Inspected `atlas_lens_signal.py` standard fields: observation, interpretation, direction, magnitude, confidence, time_horizon, affected_goals.
+Keyed contest, fail closed.
 
-HYPOTHESIS
-An additive subject-position binding, consumed by a fail-closed keyed contest, satisfies the fixture form of 25-A and 25-E. Averaging, weight-winner, and subject-blind pairing do not.
+- Bind subject, proposition, horizon, goal set, and context before pairing.
+- Reject missing subject or forged, incomplete lineage. Do not pair it.
+- Clash only when the key matches and positions differ.
+- State is unresolved. No winner, no average, no recommendation, no deletion of the minority.
+- Mark evidence basis shared or distinct-ids. Do not claim causal independence.
+- Same position is not a contradiction.
+- Read is deterministic and carries lens, signal, evidence, and weight lineage for a #26 handoff shape.
 
-EXPERIMENT
-EXP-0004, five signals.
+## What failed
 
-RESULT
-Surviving option: keyed contest. Clash only when subject, proposition, horizon, and goal set match and positions differ. Preserve both ids. Winner stays null. Missing subject is rejected, not paired.
-Rejected: weight-winner (kept A, dropped B), average (120 and 140 became 130), subject-blind (six false pairs).
+Weight-winner, average, and subject-blind pairing. EXP-0004.
 
-EVIDENCE
-experiments/EXP-0004-subject-position-gate/results/results.json
+## Slice checks that passed on the fixture
 
-LIMITATIONS
-Synthetic signals. No replay of #23 interaction output or #24 evidence ids. Does not prove semantic independence. Does not authorize implementation.
+EXP-0005, 11/11: forged rejected, one unresolved clash, no winner, minority kept, shared evidence not called independent, horizon excluded, legal state, deterministic, lineage present, distinct ids not called causal, same position not a clash.
 
-REPRODUCTION
-`python3 implementation/run.py` in the experiment folder.
+## Still required before Prime Atlas implementation
 
-RELEVANT PRIME ATLAS FILES
-docs/roadmaps/Prime Atlas Roadmap.md (#19, #25-A to #25-E). atlas_lens_signal.py. candidates/lens_signal_contract/. PROJECT_STATE.md repair note.
-
-POSSIBLE INTEGRATION POINT
-Additive #19 subject and proposition fields, then #25-A gate. Frozen #19 field set stays frozen unless the architect accepts the additive candidate.
-
-KNOWN CONFLICTS
-#23 deferred CONFLICT mathematics. This option does not use Choquet delta, weight, or confidence as a winner rule. #24 dedup must not be reused as a second merger.
-
-OPEN QUESTIONS
-Canonical id for subject and proposition. Whether horizon and goal set belong in the key or only in the false-clash filter. Where the additive fields live if #19 stays frozen.
+Architect accepts the additive #19 subject-position repair without reopening frozen #19 fields. Original #25 research artifact was not recovered here. Real #23 and #24 fixtures were not replayed. Independent review and closure audit belong to Prime Atlas, not this lab.
 
 ARCHITECTURE_DECISION_REQUIRED
