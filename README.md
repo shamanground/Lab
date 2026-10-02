@@ -1,176 +1,38 @@
 # ShamanGround Lab
 
-ShamanGround Lab is a research workspace for **controlled, reproducible experiments on large language model interaction dynamics**.
+This lab started with a person, not a product.
 
-The lab focuses exclusively on **observable interaction-layer behavior under fixed constraints**.
-No assumptions are made about internal model architecture, training data, or latent representations.
+I have a traumatic brain injury. Words sometimes take longer than the room allows. Memory does not always hand back what I just set down. A note that gets overwritten is not a small inconvenience. It is gone. So the first design question was not how to make an impressive model. It was how to build something that holds the record when I cannot, waits while a sentence forms, and does not treat a wording difference as a fight.
 
-All claims are evaluated through **explicit experimental design, raw outputs, and falsifiable criteria**.
+If a tool can do that for me, it can do it for anybody. The injury is the hard case. The product is whatever still works after that case.
 
-Visitors start at [experiments/README.md](experiments/README.md). That page is the custodian index: what was run, what was found, and what was not claimed. Each experiment lives in its own folder. Older experiments stay in their original folders and are not rewritten.
+## Prove the layer, then build
 
----
+Before Shaman Ground built on top of a model, the lab had to show that an interaction layer exists.
 
-## Current Experiment
+Not inside the weights. Not as a story about what the model "believes." At the surface, where a fixed constraint meets a reply. The claim was simple enough to fail: the same constraint, laid on unrelated subjects, should leave the same structural mark. If it did not, there was nothing there to design against.
 
-### Experiment 02 — Proof of Interaction Axis Existence
+The early experiments were that test.
 
-**Location**
+- [exp01_interaction_geometry](exp01_interaction_geometry/) asked whether a fixed perturbation changes the shape of a loop.
+- [exp02_axis_compression](exp02_axis_compression/) asked whether one constraint induces the same response regime across five unrelated claims. Under the primary constraint, it did. Five of five: the contradiction was masked, the specifics collapsed, and the reply still ended sure of itself.
 
-```
-Lab/exp02_axis_compression/
-```
+That was the existence proof. A constraint at the interaction layer is real. It is observable. It does not care what the sentence is about.
 
-**Status**
+Once that was known, building started. The lab did not close. A field that moves this fast will obsolete a design that only researches once. Shaman Ground researches while it builds, so an idea can become a tool a person actually uses without freezing the design in last year's interface.
 
-* Execution: **Complete**
-* Raw outputs: **Locked**
-* Structural coding: **Complete**
-* Final classification: **Pending** in this file. The report in that folder marks the run complete. Both statements are left as written.
+The later folders are that second job. Not another existence proof. A running check on the rules a product would trust.
 
----
+- [EXP-0001](experiments/EXP-0001-contradiction-edges/conclusion.md) showed that keeping only the last note loses the disagreement, and which note survives depends on write order.
+- [EXP-0002](experiments/EXP-0002-paraphrase-poles/conclusion.md) showed that raw text invents fights: `shut` and `closed`, `120` and `120 m`. It also showed the rule we have still misses `not open` against `closed`.
+- [EXP-0003](experiments/EXP-0003-resolution-rules/conclusion.md) showed that a stable rule is not a complete rule. A correction and a disagreement are different operations.
 
-## Objective
+Those results are why a Shaman Ground tool is not allowed to swallow a conflict, rush a half-formed sentence, or confuse a rephrasing with news. The same rules that keep my day usable are the rules a visitor should be able to inspect.
 
-Test whether **interaction axes exist** at the interaction layer.
+## From idea to a human application
 
-An interaction axis is defined operationally as:
+Shaman Ground is the path from a constraint, to a falsifiable test, to something a person can hold. The lab is the part that stays honest while the build moves. Designs stay current because the research does not stop at the pitch. A claim that cannot be rerun does not get to steer the product.
 
-> A constraint-defined axis exists if a fixed constraint induces the same structural failure pattern across semantically independent, falsifiable claims, independent of subject matter.
+Visitors start at [experiments/README.md](experiments/README.md). Each experiment has its own folder. Older runs stay where they were locked. A supported lab result is evidence. It is not, by itself, a production decision.
 
-This experiment tests **existence only**.
-It does **not** test:
-
-* axis direction
-* magnitude
-* dynamics
-* cross-axis interaction
-* internal model causes
-
----
-
-## Experimental Design (Summary)
-
-* **Claims**: 5 semantically independent, falsifiable statements
-* **Runs per claim**: 3
-
-  * Baseline (no constraint)
-  * Control (non-contradictory constraint)
-  * Primary (explicit contradiction constraint)
-* **Total runs**: 15
-* **Interaction mode**: single-turn only
-* **Model**: GPT-4.1
-* **Temperature**: 0.0
-* **Max tokens**: 120
-* **No replay, no memory, no multi-turn accumulation**
-
-All runs use an **identical system prompt and parameter set**.
-Only the user prompt differs by constraint inclusion.
-
----
-
-## Evaluation Framework
-
-Evaluation is **structural, not semantic**.
-
-Each output is coded along four categorical dimensions:
-
-1. **Reference Orientation**
-
-   * Internal
-   * External
-2. **Specificity**
-
-   * Preserved
-   * Collapsed
-3. **Contradiction Handling**
-
-   * None
-   * Juxtaposed
-   * Masked
-   * Deferred
-4. **Termination Class**
-
-   * Assertive
-   * Hedged
-   * Truncated
-   * Refusal
-
-Narrative tone, correctness, persuasion, and confidence are explicitly excluded.
-
----
-
-## Outcome Classification
-
-Results are classified into **exactly one** of the following:
-
-* **PASS — Axis Exists**
-  Invariant structural deformation under the primary constraint across all claims.
-
-* **FAIL — Axis Falsified**
-  Structural outcomes vary by claim or are reproduced under control.
-
-* **INCONCLUSIVE — Probe Failure**
-  One or more primary runs terminate via refusal or truncation not mirrored in control.
-
-No post-hoc exclusions are permitted.
-
----
-
-## Repository Structure
-
-```
-Lab/
-├── experiments/                 visitor index and later experiments
-│   ├── README.md
-│   ├── INDEX.md
-│   ├── EXP-0001-contradiction-edges/
-│   ├── EXP-0002-paraphrase-poles/
-│   └── EXP-0003-resolution-rules/
-├── exp01_interaction_geometry/  locked historical experiment
-└── exp02_axis_compression/      locked historical experiment
-```
-
-All raw outputs and execution logs are committed and treated as immutable.
-
----
-
-## Methodology Notes
-
-* All experiments operate strictly at the **interaction layer**.
-* No assumptions are made about transformer internals.
-* No interpretive averaging, scoring, or embedding analysis is used.
-* Structural coding is performed **blind to claim domain**.
-* Refusals are treated as **probe failures**, not evidence against existence.
-
----
-
-## Reproducibility
-
-To reproduce Experiment 02:
-
-1. Clone the repository
-2. Set a valid OpenAI API key in `.env`
-3. Run:
-
-   ```bash
-   ./run_order.sh
-   ```
-4. Verify raw outputs in `runs/raw/`
-5. Use `runs/exp02_runs.csv` for independent structural analysis
-
-All prompts, constraints, parameters, and scripts are included.
-
-Later store experiments under `experiments/` use the Python standard library only. Run `python3 implementation/run.py` inside the experiment folder.
-
----
-
-## Status Summary
-
-* Experiment 02: **Execution complete**
-* Raw data: **Locked**
-* Structural coding: **complete**
-* Final determination: **Pending** in this original note
-* EXP-0001, EXP-0002, EXP-0003: landed for visitors. See `experiments/README.md`.
-
-Further experiments will extend this framework to additional axes, constraints, and interaction regimes.
+If you are here because a tool failed you in an ordinary way — it forgot, it hurried, it flattened a disagreement into one confident line — that is the failure this lab was opened to catch.
